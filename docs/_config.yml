@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+theme: minima  # 你也可以尝试其他支持的 GitHub Pages 主题，例如 jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
