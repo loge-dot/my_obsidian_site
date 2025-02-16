@@ -5,31 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obsidian Web Page</title>
 
-    <!-- 正确引用 CSS -->
-    <link rel="stylesheet" href="styles/global-variable-styles.css">
-    <link rel="stylesheet" href="styles/main-styles.css">
-    <link rel="stylesheet" href="styles/obsidian.css">
-    <link rel="stylesheet" href="styles/other-plugins.css">
-    <link rel="stylesheet" href="styles/supported-plugins.css">
-    <link rel="stylesheet" href="styles/theme.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/styles/global-variable-styles.css">
+    <link rel="stylesheet" href="lib/styles/main-styles.css">
+    <link rel="stylesheet" href="lib/styles/obsidian.css">
+    <link rel="stylesheet" href="lib/styles/other-plugins.css">
+    <link rel="stylesheet" href="lib/styles/supported-plugins.css">
+    <link rel="stylesheet" href="lib/styles/theme.css">
 
-    <!-- JavaScript -->
-    <script src="scripts/webpage.js" defer></script>
+    <!-- JS -->
+    <script src="lib/scripts/webpage.js" defer></script>
 </head>
 <body>
-    <h1>欢迎来到我的 Obsidian Web Page</h1>
-    <p>这里是我的 Obsidian 笔记导出网页。</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#capture">-1. 捕获</a></li>
+            <li><a href="#archive">4.-存档</a></li>
+            <li><a href="#flomo">Flomo</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+        </ul>
+    </nav>
 
-    <!-- 依赖 JavaScript 代码的部分 -->
-    <div id="graph-container"></div>
+    <header>
+        <h1>欢迎来到我的 Obsidian Web Page</h1>
+        <p>这里是我的 Obsidian 笔记导出网页。</p>
+    </header>
 
-    <!-- 其他 JavaScript -->
-    <script src="scripts/graph-data.js" defer></script>
-    <script src="scripts/graph-render-worker.js" defer></script>
-    <script src="scripts/graph-view.js" defer></script>
-    <script src="scripts/graph-wasm.js" defer></script>
-    <script src="scripts/minisearch.js" defer></script>
-    <script src="scripts/pixi.js" defer></script>
-    <script src="scripts/tinycolor.js" defer></script>
+    <!-- -1. 捕获 -->
+    <section id="capture">
+        <h2>-1. 捕获</h2>
+        <ul>
+            <li><a href="-1. 捕获/2024 新年建议 - 陈思远.html">2024 新年建议 - 陈思远</a></li>
+            <li><a href="-1. 捕获/不理解超线性回报，就无法理解这个世界.html">不理解超线性回报</a></li>
+            <li><a href="-1. 捕获/高盛的 2024 宏观经济预测.html">高盛的 2024 宏观经济预测</a></li>
+        </ul>
+    </section>
+
+    <!-- 4.-存档 -->
+    <section id="archive">
+        <h2>4.-存档</h2>
+        <ul>
+            <li><a href="4.-存档/readme.html">README</a></li>
+            <li><a href="4.-存档/template.html">Template</a></li>
+        </ul>
+    </section>
+
+    <!-- Flomo -->
+    <section id="flomo">
+        <h2>Flomo</h2>
+        <ul>
+            <li><a href="4.-存档/flomo/flomo-moments.html">Flomo Moments</a></li>
+            <li><a href="4.-存档/flomo/flomo-canvas.html">Flomo Canvas</a></li>
+        </ul>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar">
+        <h2>Calendar</h2>
+        <ul>
+            <li><a href="4.-存档/calendar/class/(every-f,t)-msba7003-decision-analytics.html">MSBA7003 Decision Analytics</a></li>
+            <li><a href="4.-存档/calendar/workshop/2024-09-02-leadership-forum.html">Leadership Forum</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 My Obsidian Site</p>
+    </footer>
 </body>
 </html>
