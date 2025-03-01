@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeShare - Obsidian Digital Garden</title>
+    <link rel="icon" href="lib/media/favicon.png" type="image/png">
+    <link rel="stylesheet" href="lib/styles/global-variable-styles.css">
+    <link rel="stylesheet" href="lib/styles/main-styles.css">
+    <link rel="stylesheet" href="lib/styles/obsidian.css">
+</head>
+<body>
+    <div class="webpage-container">
+        <div class="document-container">
+            <div class="view-content">
+                <!-- Content will be dynamically loaded here -->
+            </div>
+        </div>
+        <div class="sidebar-left"></div>
+        <div class="sidebar-right"></div>
+    </div>
+    <script src="lib/scripts/webpage.js"></script>
+    <script>
+        window.onload = async function() {
+            await initializePage();
+        };
+    </script>
+</body>
+</html>
